@@ -1,0 +1,72 @@
+#content-wrapper {
+    background-color: #d9bce5;
+    width: 800px;
+    height: 600px;
+    position: relative;
+    left: 50%; /*can only use with relative */
+    top: 50%;
+    transform: translate(-50%, -50%); /* translate() means move */
+    border: 5px solid #4c1264;
+}
+
+#result-container {
+    width: 100%;
+    height: 20%;
+    /* background-color: #6160a3; */
+    font-size: 45px;
+    color: #09411b;
+    display: flex;
+    justify-content: center; /*centered horizontally */
+    align-items: center; /* centered vertically*/
+    border-bottom: 5px solid #4c1264;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; /*chooses first available font on a person's computer*/
+}
+
+input { /* style gets applied to all inputs*/
+    height: 85px;
+    outline: none; /*removes border when scroll over box*/
+    font-size: 40px;
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: #387a4e;
+    border: 3px solid #4c1264;
+    color: #d9bce5;
+    margin: 15px;
+}
+
+#msg-input {
+    width: 50%;
+}
+
+#key-input {
+    width: 15%;
+}
+
+#controls-container {
+    height: 80%;
+    width: 100%;
+    text-align: center;
+}
+
+#cipher-button{
+    width: 20%;
+    height: 50px;
+    color: #e8b73c;
+    outline: none;
+    border: 1px solid #e8b73c;
+    background-color: #387a4e;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 23px;
+}
+
+#cipher-button:hover {
+    background-color: #4c1264;
+}
+
+#cipher-button:active {
+    background-color: #4c1264;
+}
+
+::placeholder { /* use double color for placeholder*/
+    color: rgb(42 69 37)
+}
